@@ -1,6 +1,4 @@
 const container: HTMLElement | any = document.getElementById("app");
-const auther: string = `<div class="auther">THIS WEB SITE WAS BUILT WITH <a href="https://itshoda.onrender.com">HODIFA</a>></div>`;
-document.body.innerHTML += auther;
 const pokemons: number = 100;
 
 interface IPokemon {

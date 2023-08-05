@@ -36,8 +36,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var container = document.getElementById("app");
-var auther = "<div class=\"auther\">THIS WEB SITE WAS BUILT WITH <a href=\"https://itshoda.onrender.com\">HODIFA</a>></div>";
-document.body.innerHTML += auther;
 var pokemons = 100;
 var fetchData = function () {
     for (var i = 1; i <= pokemons; i++) {
