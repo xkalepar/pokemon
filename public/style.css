@@ -83,3 +83,16 @@ main>h1 {
     font-size: 1.3rem;
     color: #dbca80;
 }
+
+.auther {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.auther a {
+    color: white;
+}

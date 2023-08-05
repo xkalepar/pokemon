@@ -36,12 +36,30 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var container = document.getElementById("app");
+var auther = "<div class=\"auther\">THIS WEB SITE WAS BUILT WITH <a href=\"https://itshoda.onrender.com\">HODIFA</a>></div>";
 var pokemons = 100;
-var fetchData = function () {
-    for (var i = 1; i <= pokemons; i++) {
-        getPokemon(i);
-    }
-};
+var fetchData = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var i;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                i = 1;
+                _a.label = 1;
+            case 1:
+                if (!(i <= pokemons)) return [3 /*break*/, 4];
+                return [4 /*yield*/, getPokemon(i)];
+            case 2:
+                _a.sent();
+                _a.label = 3;
+            case 3:
+                i++;
+                return [3 /*break*/, 1];
+            case 4:
+                document.body.innerHTML += auther;
+                return [2 /*return*/];
+        }
+    });
+}); };
 var getPokemon = function (id) { return __awaiter(void 0, void 0, void 0, function () {
     var data, pokemon, pokemonType, transformedPokemon;
     return __generator(this, function (_a) {

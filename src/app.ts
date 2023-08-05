@@ -1,4 +1,5 @@
 const container: HTMLElement | any = document.getElementById("app");
+const auther: string = `<div class="auther">THIS WEB SITE WAS BUILT WITH <a href="https://itshoda.onrender.com">HODIFA</a>></div>`;
 const pokemons: number = 100;
 
 interface IPokemon {
@@ -8,10 +9,11 @@ interface IPokemon {
   type: string;
 }
 
-const fetchData = (): void => {
+const fetchData = async () => {
   for (let i = 1; i <= pokemons; i++) {
-    getPokemon(i);
+    await getPokemon(i);
   }
+  document.body.innerHTML += auther;
 };
 
 const getPokemon = async (id: number): Promise<void> => {
